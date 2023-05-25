@@ -1,0 +1,15 @@
+△.	genTask 	pk	solution 
+△.	genTask 	pk	solution	requirement
+△.	newTask		pk	iFrom		Workers
+△.	recBlock	pk	iFrom		iWorker		iSolution	iHeight		preWorkers	-2	iWorker		iSolution	iHeight		preWorkers	-2
+e.g.	recBlock 1 5 5 1000 1 -2 7 1000 2 2 -2 6 1000 3 3 -2
+△.	disBlock	pk	iFrom		iWorker		iSolution	iHeight		preWorkers	-2
+e.g.	disBlock 1 0 2 10000 1 -1 -2 3 10000 1 -1 -2 4 10000 1 -1 -2 1 10000 2 2 3 4 -2
+△.	recSolution	pk	iFrom		iWorker		iSolution	iHeight		preWorkers	-2
+△.	report	pk	iFrom		iWorker		iSolution	iHeight		preWorkers	-2
+e.g.	report 1 1 2 10000 1 -1 -2 3 10000 1 -1 -2 4 10000 1 -1 -2 1 10000 2 2 3 4 -2
+△.	report	pk	iFrom		iWorker	
+e.g.	query 1 5 6
+
+只有一条链或者每条链都一样长
+-1 0 0 -1 2 1000000 1 -1 -1 -1 0 0 -1 1 1000000 1 -1 -1 0 1000000 2 1 2 -1 
