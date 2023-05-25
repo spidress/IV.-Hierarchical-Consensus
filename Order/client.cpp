@@ -27,12 +27,12 @@ int startClient()
 		}
 		double process_time = loadTime();
 
-		//åˆ›å»ºå¥—æ¥å­—
+		//´´½¨Ì×½Ó×Ö
 #ifdef _WIN32
 		SOCKET sockfd;
 		SOCKADDR_IN /*sockaddr_in,*/ servaddr;
 		WSADATA wsa;
-		if(WSAStartup(MAKEWORD(2,0),&wsa))	//åˆå§‹åŒ–WS2_32.DLL
+		if(WSAStartup(MAKEWORD(2,0),&wsa))	//³õÊ¼»¯WS2_32.DLL
 		{
 			continue;
 		}
@@ -95,7 +95,7 @@ int startClient()
 		{
 			continue;
 		}
-		if(WSACleanup())    //é‡Šæ”¾WS2_32.DLL
+		if(WSACleanup())    //ÊÍ·ÅWS2_32.DLL
 		{
 			continue;
 		}
